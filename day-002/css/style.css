@@ -92,7 +92,7 @@ body{
         }
     
         100% {
-            transform: translatey(23px) rotate(40deg);
+            transform: translatey(23px) rotate(135deg);
         }
     }
     
@@ -112,27 +112,29 @@ body{
         }
     
         50% {
-            transform: translate(0, -23px) rotate(25deg);
+            transform: translate(0, -23px) rotate(0deg);
         }
     
         100% {
-            transform: translate(0, -23px) rotate(-40deg);
+            transform: translate(0, -23px) rotate(40deg);
         }
     }
 
 /* ------------- animation reverse --------------  */
+/* &.menu.rev{
 
-/* .content-1{ */
-    /* animation: movedown-rev .4s ease-in forwards; */
-/* } */
-/*  */
-/* .content-2{ */
-    /* animation: ocult-rev .7s ease-in-out forwards; */
-/* } */
-/*  */
-/* .content-3{ */
-    /* animation: moveup-rev .7s ease-out forwards;  */
-/* } */
+    .content-1{
+         animation: movedown-rev .4s ease-in forwards;
+    } 
+    
+    .content-2{
+         animation: ocult-rev .7s ease-in-out forwards;
+    } 
+    
+    .content-3{ 
+        animation: moveup-rev .7s ease-out forwards;
+     }
+} */
 
 @keyframes movedown-rev {
     0% {
