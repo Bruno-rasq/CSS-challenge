@@ -65,10 +65,10 @@ body{
     /* transition: background-color .2s ease-in-out; */
 }
 
-/* .no-animation {
+.no-animation {
 	-webkit-animation: none !important;
           animation: none !important; 
-} */
+}
 
 /* &.active {
 
