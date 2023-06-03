@@ -65,7 +65,7 @@ body{
     /* transition: background-color .2s ease-in-out; */
 }
 
-.no-animation {
+/* .no-animation {
 	-webkit-animation: none !important;
           animation: none !important; 
 }
@@ -80,6 +80,31 @@ body{
 
 .content-3{
     animation: moveup .7s ease-out forwards; 
+} */
+
+
+.menu.active .content-1{
+     animation: movedown .7s ease-in forwards;
+}
+
+.menu.active .content-2{
+    animation: ocult .7s ease-in forwards;
+}
+
+.menu.active .content-3{
+    animation: moveup .7s ease-in forwards;
+}
+
+.menu.active.rev .content-1{
+    animation: movedown-rev .7s ease-in forwards;
+}
+
+.menu.active.rev .content-2{
+   animation: ocult-rev .7s ease-in forwards;
+}
+
+.menu.active.rev .content-3{
+   animation: moveup-rev .7s ease-in forwards;
 }
 
  @keyframes movedown {
@@ -138,7 +163,7 @@ body{
 
 @keyframes movedown-rev {
     0% {
-        transform: translatey(23px) rotate(40deg);
+        transform: translatey(23px) rotate(135deg);
     }
 
     50% {
