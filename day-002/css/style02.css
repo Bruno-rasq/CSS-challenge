@@ -127,7 +127,7 @@ body{
 
 /* animation normal */
 
-&.menu.active{
+&.active{
 
     .content-1{
         animation: movedown .7s ease-in forwards;

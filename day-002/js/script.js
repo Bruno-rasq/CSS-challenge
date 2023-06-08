@@ -11,6 +11,7 @@ let line = document.querySelectorAll("#menu > div");
 // // tentativa -002
 menu.addEventListener("click", () => {
     menu.classList.toggle('active');
+
     // if(menu.classList.contains('active')){
     //     menu.classList.add('rev')
     // }
