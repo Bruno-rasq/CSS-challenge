@@ -75,23 +75,54 @@ body{
     
 }
 
+.sand::after{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 25%;
+
+    width: 85; 
+    height: 50; 
+    border-left: 100px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 20px solid rgba(0, 0, 0, 0.425);
+
+}
+
 /* =========== piramide ========= */
 
-.piramid{
+.piramid-left{
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 
     width: 85px;
     height: 70px;
-    border-left: 65px solid transparent;
-    border-right: 65px solid transparent;
+    border-left: 85px solid transparent;
     border-bottom: 65px solid white;
 
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 60%;
+    left: 30%;
     transform: translate(-50%, -50%);
 }
+
+.piramid-right{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+    width: 85px;
+    height: 70px;
+    border-right: 85px solid transparent;
+    border-bottom: 65px solid rgb(204, 204, 204);
+
+    position: absolute;
+    top: 60%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+}
+
 
 /* ========== sol ================= */
 
@@ -105,4 +136,51 @@ body{
     height: 30px;
     background: rgb(248, 248, 52);
     border-radius: 50%;
+    box-shadow: 0px 0px 30px 5px rgb(255, 255, 114);
+
+    /* animation: sun 3s ease-in-out infinite;
+    transition: all 3s ease-in-out; */
+
 }
+
+/* @keyframes sun {
+    0% {
+        top: 70%;
+        left: 0;
+
+        background: rgb(248, 248, 52);
+        border-radius: 50%;
+    }
+
+    25% {
+        top: 20%;
+        left: 20%;
+
+        background: rgb(248, 248, 52);
+        border-radius: 50%;
+    }
+
+    50% {
+        top: 10%;
+        left: 50%;
+
+        background: rgb(248, 248, 52);
+        border-radius: 50%;
+    }
+
+    75% {
+        top: 20%;
+        left: 70%;
+
+        background: rgb(248, 248, 52);
+        border-radius: 50%;
+    }
+
+    100% {
+        top: 70%;
+        left: 100%;
+
+        background: rgb(248, 248, 52);
+        border-radius: 50%;
+    }
+} */
