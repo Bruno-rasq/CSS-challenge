@@ -108,6 +108,23 @@ body{
     border-right: 5px solid transparent;
     border-top: 20px solid rgba(0, 0, 0, 0.425);
 
+    animation: piramid-shadow 5.3s ease-in-out infinite;
+
+}
+
+
+@keyframes piramid-shadow {
+    from {
+        border-left: 100px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 20px solid rgba(0, 0, 0, 0.425);
+    }
+
+    to {
+        border-left: 5px solid transparent;
+        border-right: 110px solid transparent;
+        border-top: 20px solid rgba(0, 0, 0, 0.425);
+    }
 }
 
 
@@ -166,13 +183,21 @@ body{
 @keyframes shadow-piramid-right {
 
 
-    from {
+    0% {
         border-bottom: 65px solid rgb(204, 204, 204);
     }
 
-    to {
+    70% {
         border-bottom: 65px solid white;
 
+    }
+
+    90% {
+        border-bottom: 65px solid rgb(204, 204, 204); 
+    }
+
+    100% {
+        border-bottom: 65px solid rgb(204, 204, 204); 
     }
 
 
