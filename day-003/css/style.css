@@ -38,11 +38,11 @@ body{
     width: 200px;
     height: 200px;
     
-    background: rgb(94, 94, 255);
-    border-radius: 50%;
+    /* background: rgb(94, 94, 255);
+    border-radius: 50%; */
 
-    /* animation: sky 3s ease-in-out infinite;
-    transition: all 3s ease-in-out; */
+    animation: sky 5s ease-in-out infinite;
+    /* transition: all 3s ease-in-out; */
 }
 
 @keyframes sky {
@@ -105,6 +105,18 @@ body{
     top: 60%;
     left: 30%;
     transform: translate(-50%, -50%);
+
+    animation: shadow-piramid-left 5.3s ease-in infinite;
+}
+
+@keyframes shadow-piramid-left {
+    from {
+        border-bottom: 65px solid white;
+    }
+
+    to{
+        border-bottom: 65px solid rgb(204, 204, 204);
+    }
 }
 
 .piramid-right{
@@ -121,6 +133,18 @@ body{
     top: 60%;
     left: 72%;
     transform: translate(-50%, -50%);
+
+    animation: shadow-piramid-right 5.3s ease-in infinite;
+}
+
+@keyframes shadow-piramid-right {
+    from {
+        border-bottom: 65px solid rgb(204, 204, 204);
+    }
+
+    to{
+        border-bottom: 65px solid white;
+    }
 }
 
 
