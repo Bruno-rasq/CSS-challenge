@@ -114,16 +114,29 @@ body{
 
 
 @keyframes piramid-shadow {
-    from {
+
+    0% {
+        border-left: 100px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 20px solid rgba(0, 0, 0, 0);
+    }
+
+    20% {
         border-left: 100px solid transparent;
         border-right: 5px solid transparent;
         border-top: 20px solid rgba(0, 0, 0, 0.425);
     }
 
-    to {
+    70% {
         border-left: 5px solid transparent;
         border-right: 110px solid transparent;
         border-top: 20px solid rgba(0, 0, 0, 0.425);
+    }
+
+    100% {
+        border-left: 5px solid transparent;
+        border-right: 110px solid transparent;
+        border-top: 20px solid rgba(0, 0, 0, 0);
     }
 }
 
@@ -150,13 +163,20 @@ body{
 
 @keyframes shadow-piramid-left {
 
+    0% {
+        border-bottom: 65px solid rgb(136, 133, 133);
+    }
 
-    from {
+    10% {
         border-bottom: 65px solid white;
     }
 
-    to {
+    90% {
         border-bottom: 65px solid rgb(204, 204, 204);
+    }
+
+    100% {
+        border-bottom: 65px solid rgb(136, 133, 133); 
     }
 
 
@@ -184,7 +204,7 @@ body{
 
 
     0% {
-        border-bottom: 65px solid rgb(204, 204, 204);
+        border-bottom: 65px solid rgb(136, 133, 133);
     }
 
     70% {
@@ -197,7 +217,7 @@ body{
     }
 
     100% {
-        border-bottom: 65px solid rgb(204, 204, 204); 
+        border-bottom: 65px solid rgb(136, 133, 133); 
     }
 
 
