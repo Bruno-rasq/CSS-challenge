@@ -70,6 +70,7 @@ body {
 .painel-body {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 100%;
   padding: 15px;
 }
@@ -80,4 +81,42 @@ body {
   justify-content: right;
   gap: 10px;
   color: rgb(168, 162, 162);
+  font-size: 0.8em;
+}
+.painel-body-top .indice-red {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  gap: 10px;
+}
+.painel-body-top .indice-red .red {
+  width: 15px;
+  height: 5px;
+  background-color: red;
+}
+.painel-body-top .indice-blue {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  gap: 10px;
+}
+.painel-body-top .indice-blue .blue {
+  width: 15px;
+  height: 5px;
+  background-color: blue;
+}
+.painel-body-main {
+  width: 100%;
+  height: 130px;
+  margin-bottom: 5px;
+  background: rgb(235, 235, 235);
+}
+.painel-body-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgb(168, 162, 162);
+  font-size: 0.8em;
 }/*# sourceMappingURL=style.css.map */
