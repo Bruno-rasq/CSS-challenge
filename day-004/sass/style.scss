@@ -15,7 +15,7 @@ body{
     .ball-1{
 
         @include ball(0px, 0px);
-        animation: ball-1 ease-in 3s infinite;
+        animation: ball-1 ease-in 4s infinite;
 
         @keyframes ball-1 {
             0% {
@@ -33,6 +33,11 @@ body{
                 height: 30%;
             }
 
+            95% {
+                width: 0%;
+                height: 0%;
+            }
+
             100% {
                 width: 0%;
                 height: 0%;
@@ -42,7 +47,8 @@ body{
         .ball-2{
 
             @include ball(0px, 0px);
-            animation: ball-2 ease-in 3s infinite;
+            animation: ball-2 ease-in 4s infinite;
+            animation-delay: 1s;
 
             @keyframes ball-2 {
                 0% {
@@ -60,6 +66,11 @@ body{
                     height: 70%;
                 }
 
+                95% {
+                    width: 0%;
+                    height: 0%;
+                }
+
                 100% {
                     width: 0%;
                     height: 0%;
@@ -69,7 +80,8 @@ body{
             .ball-3{
 
                 @include ball(40px, 40px);
-                animation: ball-3 ease-in 3s infinite;
+                animation: ball-3 ease-in 4s infinite;
+                
 
                 @keyframes ball-3 {
                     0% {
@@ -86,6 +98,11 @@ body{
                         width: 70%;
                         height: 70%;
                     }
+
+                    95% {
+                        width: 0%;
+                        height: 0%;
+                    }
     
                     100% {
                         width: 0%;
@@ -97,7 +114,8 @@ body{
                 .ball-4{
 
                     @include ball(10px, 10px);
-                    animation: ball-4 ease-in 3s infinite;
+                    animation: ball-4 ease-in 4s infinite;
+                    
 
                     @keyframes ball-4 {
                         0% {
@@ -113,6 +131,11 @@ body{
                         70% {
                             width: 50%;
                             height: 50%;
+                        }
+
+                        95% {
+                            width: 0%;
+                            height: 0%;
                         }
         
                         100% {
