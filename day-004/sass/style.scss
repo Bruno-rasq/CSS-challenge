@@ -13,20 +13,12 @@ body{
     @include frame();
 
     .ball-1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
-        border-radius: 50%;
-
-        background: $primary-color;
-        @include shadow-box();
-
-        opacity: 1;
+        @include ball(0px, 0px);
         animation: ball-1 ease-in 3s infinite;
 
         @keyframes ball-1 {
-            0%{
+            0% {
                 width: 0%;
                 height: 0%;
             }
@@ -48,37 +40,26 @@ body{
         }
 
         .ball-2{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 5;
 
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-
-            background: $primary-color;
-            @include shadow-box();
-
-            opacity: 1;
+            @include ball(0px, 0px);
             animation: ball-2 ease-in 3s infinite;
 
             @keyframes ball-2 {
-                0%{
+                0% {
                     width: 0%;
                     height: 0%;
                 }
-    
+
                 50% {
                     width: 70%;
                     height: 70%;
                 }
-    
+
                 70% {
                     width: 70%;
                     height: 70%;
                 }
-    
+
                 100% {
                     width: 0%;
                     height: 0%;
@@ -87,82 +68,58 @@ body{
 
             .ball-3{
 
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 5;
-
-                border-radius: 50%;
-                width: 100px;
-                height: 100px;
-
-                background: $primary-color;
-                @include shadow-box();
-
-                opacity: 1;
+                @include ball(40px, 40px);
                 animation: ball-3 ease-in 3s infinite;
 
                 @keyframes ball-3 {
-                    0%{
+                    0% {
                         width: 0%;
                         height: 0%;
                     }
-        
+    
                     50% {
-                        width: 60%;
-                        height: 60%;
+                        width: 70%;
+                        height: 70%;
                     }
-        
+    
                     70% {
-                        width: 60%;
-                        height: 60%;
+                        width: 70%;
+                        height: 70%;
                     }
-        
+    
                     100% {
                         width: 0%;
                         height: 0%;
                     }
                 }
 
+
                 .ball-4{
 
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    z-index: 5;
-
-                    border-radius: 50%;
-                    width: 100px;
-                    height: 100px;
-
-                    background: $primary-color;
-                    @include shadow-box();
-
-                    opacity: 1;
+                    @include ball(10px, 10px);
                     animation: ball-4 ease-in 3s infinite;
 
                     @keyframes ball-4 {
-                        0%{
+                        0% {
                             width: 0%;
                             height: 0%;
                         }
-            
+        
                         50% {
-                            width: 40%;
-                            height: 40%;
+                            width: 50%;
+                            height: 50%;
                         }
-            
+        
                         70% {
-                            width: 40%;
-                            height: 40%;
+                            width: 50%;
+                            height: 50%;
                         }
-            
+        
                         100% {
                             width: 0%;
                             height: 0%;
                         }
                     }
-    
 
                 }
 
