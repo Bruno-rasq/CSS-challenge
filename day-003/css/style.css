@@ -228,9 +228,10 @@ body{
 
 .sun{
     display: flex;
-    position: absolute;
-    /* top: 20%;
-    left: 20%; */
+    position: relative;
+
+    top: 75%;
+    left: 40%;
 
     width: 30px;
     height: 30px;
@@ -244,6 +245,18 @@ body{
 }
 
 @keyframes sun {
+    0% {
+        
+        transform: rotate(0deg) translate(-100px) rotate(0deg);
+    }
+
+    100% {
+        
+        transform: rotate(270deg) translate(-120px) rotate(-270deg);
+    }
+}
+
+/* @keyframes sun {
     0% {
         top: 80%;
         left: -100px;
@@ -268,4 +281,4 @@ body{
         background: rgb(248, 248, 52);
         border-radius: 50%;
     }
-}
+} */
