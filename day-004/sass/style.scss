@@ -1,0 +1,30 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+*{
+    @include reset();
+}
+
+body{
+    @include body();
+}
+
+.frame{
+    @include frame();
+
+    .ball-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100px;
+        height: 100px;
+
+        background: $primary-color;
+        @include shadow-box();
+
+        opacity: 1;
+
+    }
+}
+
