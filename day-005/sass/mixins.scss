@@ -53,60 +53,202 @@
     
         .points-red-1{
             @include point(red);
+            cursor: pointer;
     
             position: absolute;
             top: 62%;
             left: 1%;
+
+            .tooltip-red{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 1;
+        
+                position: relative;
+                top: -35px;
+                left: -10px;
+        
+                width: 30px;
+                height: 30px;
+                padding: 3px;
+                border-radius: 10px;
+        
+                background: red;
+                color: white;
+            }
         }
     
         .points-red-2{
             @include point(red);
+            cursor: pointer;
     
             position: absolute;
             top: 36%;
             left: 19%;
+
+            .tooltip-red{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+        
+                position: relative;
+                top: -35px;
+                left: -10px;
+        
+                width: 30px;
+                height: 30px;
+                padding: 3px;
+                border-radius: 10px;
+        
+                background: red;
+                color: white;
+            }
         }
     
         .points-red-3{
             @include point(red);
+            cursor: pointer;
     
             position: absolute;
             top: 43%;
             left: 33%;
+
+            .tooltip-red{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+        
+                position: relative;
+                top: -35px;
+                left: -10px;
+        
+                width: 30px;
+                height: 30px;
+                padding: 3px;
+                border-radius: 10px;
+        
+                background: red;
+                color: white;
+            }
         }
     
         .points-red-4{
             @include point(red);
+            cursor: pointer;
     
             position: absolute;
             top: 36%;
             left: 49%;
+
+            .tooltip-red{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+        
+                position: relative;
+                top: -35px;
+                left: -10px;
+        
+                width: 30px;
+                height: 30px;
+                padding: 3px;
+                border-radius: 10px;
+        
+                background: red;
+                color: white;
+            }
         }
     
         .points-red-5{
             @include point(red);
+            cursor: pointer;
     
             position: absolute;
             top: 55%;
             left: 65%;
+
+            .tooltip-red{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+        
+                position: relative;
+                top: -35px;
+                left: -10px;
+        
+                width: 30px;
+                height: 30px;
+                padding: 3px;
+                border-radius: 10px;
+        
+                background: red;
+                color: white;
+            }
         }
     
         .points-red-6{
             @include point(red);
+            cursor: pointer;
     
             position: absolute;
             top: 64%;
             left: 79%;
+
+            .tooltip-red{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+        
+                position: relative;
+                top: -35px;
+                left: -10px;
+        
+                width: 30px;
+                height: 30px;
+                padding: 3px;
+                border-radius: 10px;
+        
+                background: red;
+                color: white;
+            }
         }
     
         .points-red-7{
             @include point(red);
+            cursor: pointer;
     
             position: absolute;
             top: 39%;
             left: 93%;
+
+            .tooltip-red{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+        
+                position: relative;
+                top: -35px;
+                left: -10px;
+        
+                width: 30px;
+                height: 30px;
+                padding: 3px;
+                border-radius: 10px;
+        
+                background: red;
+                color: white;
+            }
         }
     }
+
+
 }
 
 @mixin points-blue(){
@@ -123,59 +265,201 @@
     
         .points-blue-1{
             @include point(blue);
+            cursor: pointer;
     
             position: absolute;
             top: 74%;
             left: 1%;
+
+            .tooltip-blue{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+        
+                position: relative;
+                top: -35px;
+                left: -10px;
+        
+                width: 30px;
+                height: 30px;
+                padding: 3px;
+                border-radius: 10px;
+        
+                background: blue;
+                color: white;
+            }
         }
     
         .points-blue-2{
             @include point(blue);
+            cursor: pointer;
     
             position: absolute;
             top: 66%;
             left: 19%;
+
+            .tooltip-blue{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+        
+                position: relative;
+                top: -35px;
+                left: -10px;
+        
+                width: 30px;
+                height: 30px;
+                padding: 3px;
+                border-radius: 10px;
+        
+                background: blue;
+                color: white;
+            }
         }
     
         .points-blue-3{
             @include point(blue);
+            cursor: pointer;
     
             position: absolute;
             top: 76%;
             left: 33%;
+
+            .tooltip-blue{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+        
+                position: relative;
+                top: -35px;
+                left: -10px;
+        
+                width: 30px;
+                height: 30px;
+                padding: 3px;
+                border-radius: 10px;
+        
+                background: blue;
+                color: white;
+            }
         }
     
         .points-blue-4{
             @include point(blue);
+            cursor: pointer;
     
             position: absolute;
             top: 70%;
             left: 49%;
+
+            .tooltip-blue{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+        
+                position: relative;
+                top: -35px;
+                left: -10px;
+        
+                width: 30px;
+                height: 30px;
+                padding: 3px;
+                border-radius: 10px;
+        
+                background: blue;
+                color: white;
+            }
         }
     
         .points-blue-5{
             @include point(blue);
+            cursor: pointer;
     
             position: absolute;
             top: 73%;
             left: 65%;
+
+            .tooltip-blue{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+        
+                position: relative;
+                top: -35px;
+                left: -10px;
+        
+                width: 30px;
+                height: 30px;
+                padding: 3px;
+                border-radius: 10px;
+        
+                background: blue;
+                color: white;
+            }
         }
     
         .points-blue-6{
             @include point(blue);
+            cursor: pointer;
     
             position: absolute;
             top: 83%;
             left: 79%;
+
+            .tooltip-blue{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+        
+                position: relative;
+                top: -35px;
+                left: -10px;
+        
+                width: 30px;
+                height: 30px;
+                padding: 3px;
+                border-radius: 10px;
+        
+                background: blue;
+                color: white;
+            }
         }
     
         .points-blue-7{
             @include point(blue);
+            cursor: pointer;
     
             position: absolute;
             top: 76%;
             left: 93%;
+
+            .tooltip-blue{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+        
+                position: relative;
+                top: -35px;
+                left: -10px;
+        
+                width: 30px;
+                height: 30px;
+                padding: 3px;
+                border-radius: 10px;
+        
+                background: blue;
+                color: white;
+            }
         }
     
     }
+
 }
+
