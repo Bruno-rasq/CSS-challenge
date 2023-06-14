@@ -110,7 +110,7 @@ body {
 .painel-body-main {
   width: 100%;
   height: 130px;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
   background: rgb(235, 235, 235);
   position: relative;
 }
@@ -134,11 +134,15 @@ body {
   top: 62%;
   left: 1%;
 }
+.painel-body-main .points-red .points-red-1:hover .tooltip-red {
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
 .painel-body-main .points-red .points-red-1 .tooltip-red {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1;
+  opacity: 0;
   position: relative;
   top: -35px;
   left: -10px;
@@ -159,6 +163,10 @@ body {
   position: absolute;
   top: 36%;
   left: 19%;
+}
+.painel-body-main .points-red .points-red-2:hover .tooltip-red {
+  opacity: 1;
+  transition: 0.5s ease-in;
 }
 .painel-body-main .points-red .points-red-2 .tooltip-red {
   display: flex;
@@ -186,6 +194,10 @@ body {
   top: 43%;
   left: 33%;
 }
+.painel-body-main .points-red .points-red-3:hover .tooltip-red {
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
 .painel-body-main .points-red .points-red-3 .tooltip-red {
   display: flex;
   justify-content: center;
@@ -211,6 +223,10 @@ body {
   position: absolute;
   top: 36%;
   left: 49%;
+}
+.painel-body-main .points-red .points-red-4:hover .tooltip-red {
+  opacity: 1;
+  transition: 0.5s ease-in;
 }
 .painel-body-main .points-red .points-red-4 .tooltip-red {
   display: flex;
@@ -238,6 +254,10 @@ body {
   top: 55%;
   left: 65%;
 }
+.painel-body-main .points-red .points-red-5:hover .tooltip-red {
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
 .painel-body-main .points-red .points-red-5 .tooltip-red {
   display: flex;
   justify-content: center;
@@ -264,6 +284,10 @@ body {
   top: 64%;
   left: 79%;
 }
+.painel-body-main .points-red .points-red-6:hover .tooltip-red {
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
 .painel-body-main .points-red .points-red-6 .tooltip-red {
   display: flex;
   justify-content: center;
@@ -289,6 +313,10 @@ body {
   position: absolute;
   top: 39%;
   left: 93%;
+}
+.painel-body-main .points-red .points-red-7:hover .tooltip-red {
+  opacity: 1;
+  transition: 0.5s ease-in;
 }
 .painel-body-main .points-red .points-red-7 .tooltip-red {
   display: flex;
@@ -325,6 +353,10 @@ body {
   top: 74%;
   left: 1%;
 }
+.painel-body-main .points-blue .points-blue-1:hover .tooltip-blue {
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
 .painel-body-main .points-blue .points-blue-1 .tooltip-blue {
   display: flex;
   justify-content: center;
@@ -350,6 +382,10 @@ body {
   position: absolute;
   top: 66%;
   left: 19%;
+}
+.painel-body-main .points-blue .points-blue-2:hover .tooltip-blue {
+  opacity: 1;
+  transition: 0.5s ease-in;
 }
 .painel-body-main .points-blue .points-blue-2 .tooltip-blue {
   display: flex;
@@ -377,6 +413,10 @@ body {
   top: 76%;
   left: 33%;
 }
+.painel-body-main .points-blue .points-blue-3:hover .tooltip-blue {
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
 .painel-body-main .points-blue .points-blue-3 .tooltip-blue {
   display: flex;
   justify-content: center;
@@ -402,6 +442,10 @@ body {
   position: absolute;
   top: 70%;
   left: 49%;
+}
+.painel-body-main .points-blue .points-blue-4:hover .tooltip-blue {
+  opacity: 1;
+  transition: 0.5s ease-in;
 }
 .painel-body-main .points-blue .points-blue-4 .tooltip-blue {
   display: flex;
@@ -429,6 +473,10 @@ body {
   top: 73%;
   left: 65%;
 }
+.painel-body-main .points-blue .points-blue-5:hover .tooltip-blue {
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
 .painel-body-main .points-blue .points-blue-5 .tooltip-blue {
   display: flex;
   justify-content: center;
@@ -455,6 +503,10 @@ body {
   top: 83%;
   left: 79%;
 }
+.painel-body-main .points-blue .points-blue-6:hover .tooltip-blue {
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
 .painel-body-main .points-blue .points-blue-6 .tooltip-blue {
   display: flex;
   justify-content: center;
@@ -480,6 +532,10 @@ body {
   position: absolute;
   top: 76%;
   left: 93%;
+}
+.painel-body-main .points-blue .points-blue-7:hover .tooltip-blue {
+  opacity: 1;
+  transition: 0.5s ease-in;
 }
 .painel-body-main .points-blue .points-blue-7 .tooltip-blue {
   display: flex;

@@ -59,11 +59,19 @@
             top: 62%;
             left: 1%;
 
+            &:hover{
+                .tooltip-red{
+                    opacity: 1;
+                    transition: .5s ease-in;
+                }
+            }
+
             .tooltip-red{
+                
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                opacity: 1;
+                opacity: 0;
         
                 position: relative;
                 top: -35px;
@@ -86,6 +94,13 @@
             position: absolute;
             top: 36%;
             left: 19%;
+
+            &:hover{
+                .tooltip-red{
+                    opacity: 1;
+                    transition: .5s ease-in;
+                }
+            }
 
             .tooltip-red{
                 display: flex;
@@ -115,6 +130,13 @@
             top: 43%;
             left: 33%;
 
+            &:hover{
+                .tooltip-red{
+                    opacity: 1;
+                    transition: .5s ease-in;
+                }
+            }
+
             .tooltip-red{
                 display: flex;
                 justify-content: center;
@@ -142,6 +164,13 @@
             position: absolute;
             top: 36%;
             left: 49%;
+
+            &:hover{
+                .tooltip-red{
+                    opacity: 1;
+                    transition: .5s ease-in;
+                }
+            }
 
             .tooltip-red{
                 display: flex;
@@ -171,6 +200,13 @@
             top: 55%;
             left: 65%;
 
+            &:hover{
+                .tooltip-red{
+                    opacity: 1;
+                    transition: .5s ease-in;
+                }
+            }
+
             .tooltip-red{
                 display: flex;
                 justify-content: center;
@@ -199,6 +235,13 @@
             top: 64%;
             left: 79%;
 
+            &:hover{
+                .tooltip-red{
+                    opacity: 1;
+                    transition: .5s ease-in;
+                }
+            }
+
             .tooltip-red{
                 display: flex;
                 justify-content: center;
@@ -226,6 +269,13 @@
             position: absolute;
             top: 39%;
             left: 93%;
+
+            &:hover{
+                .tooltip-red{
+                    opacity: 1;
+                    transition: .5s ease-in;
+                }
+            }
 
             .tooltip-red{
                 display: flex;
@@ -271,7 +321,15 @@
             top: 74%;
             left: 1%;
 
+            &:hover{
+                .tooltip-blue{
+                    opacity: 1;
+                    transition: .5s ease-in;
+                }
+            }
+
             .tooltip-blue{
+    
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -288,6 +346,8 @@
         
                 background: blue;
                 color: white;
+
+                
             }
         }
     
@@ -298,6 +358,13 @@
             position: absolute;
             top: 66%;
             left: 19%;
+
+            &:hover{
+                .tooltip-blue{
+                    opacity: 1;
+                    transition: .5s ease-in;
+                }
+            }
 
             .tooltip-blue{
                 display: flex;
@@ -327,6 +394,13 @@
             top: 76%;
             left: 33%;
 
+            &:hover{
+                .tooltip-blue{
+                    opacity: 1;
+                    transition: .5s ease-in;
+                }
+            }
+
             .tooltip-blue{
                 display: flex;
                 justify-content: center;
@@ -354,6 +428,13 @@
             position: absolute;
             top: 70%;
             left: 49%;
+
+            &:hover{
+                .tooltip-blue{
+                    opacity: 1;
+                    transition: .5s ease-in;
+                }
+            }
 
             .tooltip-blue{
                 display: flex;
@@ -383,6 +464,13 @@
             top: 73%;
             left: 65%;
 
+            &:hover{
+                .tooltip-blue{
+                    opacity: 1;
+                    transition: .5s ease-in;
+                }
+            }
+
             .tooltip-blue{
                 display: flex;
                 justify-content: center;
@@ -411,6 +499,13 @@
             top: 83%;
             left: 79%;
 
+            &:hover{
+                .tooltip-blue{
+                    opacity: 1;
+                    transition: .5s ease-in;
+                }
+            }
+
             .tooltip-blue{
                 display: flex;
                 justify-content: center;
@@ -438,6 +533,13 @@
             position: absolute;
             top: 76%;
             left: 93%;
+
+            &:hover{
+                .tooltip-blue{
+                    opacity: 1;
+                    transition: .5s ease-in;
+                }
+            }
 
             .tooltip-blue{
                 display: flex;
