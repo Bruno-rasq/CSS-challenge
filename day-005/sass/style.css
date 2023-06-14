@@ -112,6 +112,168 @@ body {
   height: 130px;
   margin-bottom: 5px;
   background: rgb(235, 235, 235);
+  position: relative;
+}
+.painel-body-main .points-red {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.painel-body-main .points-red .points-red-1 {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 62%;
+  left: 1%;
+}
+.painel-body-main .points-red .points-red-2 {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 36%;
+  left: 19%;
+}
+.painel-body-main .points-red .points-red-3 {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 43%;
+  left: 33%;
+}
+.painel-body-main .points-red .points-red-4 {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 36%;
+  left: 49%;
+}
+.painel-body-main .points-red .points-red-5 {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 55%;
+  left: 65%;
+}
+.painel-body-main .points-red .points-red-6 {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 64%;
+  left: 79%;
+}
+.painel-body-main .points-red .points-red-7 {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 39%;
+  left: 93%;
+}
+.painel-body-main .points-blue {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.painel-body-main .points-blue .points-blue-1 {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: 74%;
+  left: 1%;
+}
+.painel-body-main .points-blue .points-blue-2 {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: 66%;
+  left: 19%;
+}
+.painel-body-main .points-blue .points-blue-3 {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: 76%;
+  left: 33%;
+}
+.painel-body-main .points-blue .points-blue-4 {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: 70%;
+  left: 49%;
+}
+.painel-body-main .points-blue .points-blue-5 {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: 73%;
+  left: 65%;
+}
+.painel-body-main .points-blue .points-blue-6 {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: 83%;
+  left: 79%;
+}
+.painel-body-main .points-blue .points-blue-7 {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: 76%;
+  left: 93%;
+}
+.painel-body-main .tooltip {
+  display: none;
 }
 .painel-body-footer {
   display: flex;

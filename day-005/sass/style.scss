@@ -1,6 +1,7 @@
 @import './mixins.scss';
 @import './variables.scss';
 
+
 *{
     @include reset();
 }
@@ -126,6 +127,14 @@ body{
             margin-bottom: 5px;
 
             background: rgb(235, 235, 235);
+            position: relative;
+
+            @include points-red();
+            @include points-blue();
+
+            .tooltip{
+                display: none;
+            }
 
             
         }
