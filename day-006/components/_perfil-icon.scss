@@ -1,0 +1,16 @@
+.perfil-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 100px;
+    margin-top: 36px;
+
+    border-radius: 50%;
+    background-color: $box-color-shadow;
+
+    span{
+        font-size: 50px;
+    }
+}
