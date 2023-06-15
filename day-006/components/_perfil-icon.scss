@@ -2,15 +2,54 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     margin-top: 36px;
 
     border-radius: 50%;
     background-color: $box-color-shadow;
 
+    &:hover{
+        .circle-1{
+            transform: rotate(360deg);
+        }
+
+        .circle-2{
+            transform: rotate(360deg); 
+        }
+    }
+
     span{
         font-size: 50px;
+    }
+
+    .circle-1{
+        position: absolute;
+		box-sizing: border-box;
+		width: 80px;
+		height: 80px;
+		top: -5px;
+		left: -5px;
+		border-width: 1px;
+		border-style: solid;
+		border-color: brown brown brown transparent;
+		border-radius: 50%;
+		transition: all .7s ease-in-out;
+    }
+
+    .circle-2{
+        position: absolute;
+		box-sizing: border-box;
+		width: 90px;
+		height: 90px;
+		top: -10px;
+		left: -10px;
+		border-width: 1px;
+		border-style: solid;
+		border-color: brown transparent brown brown;
+		border-radius: 50%;
+        transition: all .7s ease-in-out;
     }
 }
