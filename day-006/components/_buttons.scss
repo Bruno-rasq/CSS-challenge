@@ -1,0 +1,23 @@
+@import '../sass/variables';
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 30px;
+
+    background: $box-primary-color;
+    border-radius: 50px;
+    border: 1px solid $text-color;
+    cursor: pointer;
+
+    transition: all .4s ease-in-out;
+
+    &:hover{
+        background: $text-color;
+        color: white;
+    }
+
+}
