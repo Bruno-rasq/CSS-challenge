@@ -1,0 +1,14 @@
+span{
+    // font-size: 50px; no sei pq não está pegando a tamanho
+
+    &:hover{
+        color: whitesmoke;
+        cursor: pointer;
+    }
+}
+
+#menu{
+    // inicia com display flex
+    // recebe display none quando o input estiver ativado
+    display: flex;
+}

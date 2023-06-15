@@ -12,13 +12,34 @@
 
     .box-header{
         @include center(center, space-between, row);
+        position: relative;
+
         background-color: $box-header-color;
+        color: $box-header-icon-color;
 
         width: 100%;
         height: 18%;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        p{
+            color: white;
+            font-size: 1em;
+
+            // inicia com display flex
+            // recebe display none quando o input estiver ativado
+            display: flex;
+        }
     }
 
     .box-main{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 20px;
+
         width: 100%;
+        height: 82%;
     }
 }
