@@ -31,10 +31,15 @@ body {
 .box {
   display: flex;
   flex-direction: column;
+  z-index: 10;
   background-color: #fff;
   box-shadow: 10px 13px 10px 0px rgba(0, 0, 0, 0.3);
   width: 330px;
   height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .box .box-header {
   display: flex;
@@ -60,6 +65,47 @@ body {
   justify-content: space-around;
   width: 100%;
   height: 82%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 230px;
+  height: 330px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #18446d;
+  box-shadow: -10px 13px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.nav ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+  padding-left: 30px;
+  color: #B2DAFf;
+}
+.nav ul li span {
+  margin-right: 10px;
+}
+.nav ul li:hover {
+  background-color: #26537c;
+  cursor: pointer;
 }
 
 .notifications {
@@ -122,6 +168,10 @@ body {
   margin-right: 4px;
 }
 
+#menu,
+#search-icon {
+  font-size: 46px;
+}
 #menu:hover,
 #search-icon:hover {
   color: whitesmoke;
