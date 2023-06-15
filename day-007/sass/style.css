@@ -7,6 +7,7 @@
 body {
   width: 100vw;
   height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 .frame {
@@ -57,12 +58,72 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-left: 20px;
   width: 100%;
   height: 82%;
 }
 
-span:hover {
+.notifications {
+  display: flex;
+  flex-direction: row;
+  height: 33%;
+  width: 100%;
+  padding-left: 20px;
+}
+.notifications .notification-icon-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 20px;
+  height: 100%;
+}
+.notifications .notification-icon-left .icon-1 {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 4px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 3px solid #5F98CD;
+}
+.notifications .notification-icon-left .icon-2 {
+  width: 3px;
+  height: 70%;
+  background-color: #5F98CD;
+}
+.notifications .notification {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.notifications .notification:hover .time {
+  color: #5F98CD;
+  cursor: pointer;
+}
+.notifications .notification:hover .msm {
+  color: #5F98CD;
+  cursor: pointer;
+}
+.notifications .notification .time {
+  font-size: 0.8em;
+  margin-bottom: 3px;
+}
+.notifications .notification .msm {
+  display: flex;
+  font-size: 0.9em;
+  width: 100%;
+  padding-right: 20px;
+}
+.notifications .notification .msm .name-msm {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-right: 4px;
+}
+
+#menu:hover,
+#search-icon:hover {
   color: whitesmoke;
   cursor: pointer;
 }
