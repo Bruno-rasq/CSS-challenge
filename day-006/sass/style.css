@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgray;
+  font-family: "Open Sans", sans-serif;
+}
+
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 550px;
+  max-width: 90%;
+  height: 450px;
+  max-height: 80%;
+  border-radius: 8px;
+  background-color: #CA7C4E;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  height: 350px;
+  background-color: #fff;
+  box-shadow: 10px 13px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.box .perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 65%;
+}
+.box .infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 35%;
+}
+.box .infos .likes,
+.box .infos .posts,
+.box .infos .followers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5E8DF;
+  width: 100%;
+  height: 32.8%;
+}
+.box .infos .likes p,
+.box .infos .posts p,
+.box .infos .followers p {
+  font-size: 0.8em;
+  color: brown;
+}
+.box .infos .likes:hover,
+.box .infos .posts:hover,
+.box .infos .followers:hover {
+  background-color: #d8c4b6;
+  cursor: pointer;
+}
+.box .infos .likes .info-numbers,
+.box .infos .posts .info-numbers,
+.box .infos .followers .info-numbers {
+  color: rgb(61, 30, 30);
+  font-size: 20px;
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */
