@@ -1,16 +1,40 @@
 // INPUT SEARCH 
-#search{
+.search-div{
     // inicia com display none
-    // recebe display flex quando o input estiver ativado
+    // ganha display flex quando search ativado
+
     display: none;
+    align-items: center;
+    justify-content: center;
 
-    width: 85%;
-    height: 30px;
-    padding-left: 10px;
+    z-index: 15;
+    position: absolute;
 
-    background-color: $box-primary-color;
-    border: 1px solid blue;
-    border-radius: 50px;
-    outline: none;
+    width: 70%;
+    height: 100%;
+
+    background-color: $box-header-color;
+
+    transition: all .7s ease-in forwards;
+
+    &.open{
+        display: flex;
+    }
+
+    #search{
+        display: flex;
+    
+        width: 90%;
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 6px;
+    
+        background-color: $box-primary-color;
+        border: 1px solid blue;
+        border-radius: 50px;
+        outline: none;
+        
+        color: blueviolet;
+    }
 
 }

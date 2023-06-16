@@ -11,9 +11,18 @@
     height: 330px;
     border-radius: 10px;
     overflow: hidden;
+    user-select: none;
 
     background: $nav-color;
     box-shadow: -10px 13px 10px 0px $shadow-color;
+
+    transition: all .8s ease-in-out;
+
+    &.active{
+        position: absolute;
+        top: 50%;
+        left: 35%;
+    }
 
     ul{
         list-style: none;

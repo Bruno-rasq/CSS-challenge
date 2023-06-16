@@ -15,6 +15,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all .8s ease-in-out;
+
+    &.active{
+        position: absolute;
+        top: 50%;
+        left: 85%;
+    }
 
     .box-header{
         @include center(center, space-between, row);
@@ -27,14 +34,12 @@
         height: 18%;
         padding-left: 20px;
         padding-right: 20px;
+        user-select: none;
 
         p{
             color: white;
             font-size: 1em;
 
-            // inicia com display flex
-            // recebe display none quando o input estiver ativado
-            display: flex;
         }
     }
 
@@ -48,3 +53,4 @@
         height: 82%;
     }
 }
+
