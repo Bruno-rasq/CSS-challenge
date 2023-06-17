@@ -25,6 +25,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+  filter: contrast(10);
 }
 
 .ball-principal {
@@ -37,6 +38,7 @@ body {
   border-radius: 50%;
   background-color: #fff;
   position: relative;
+  filter: blur(5px);
 }
 
 .balls-secundary {
