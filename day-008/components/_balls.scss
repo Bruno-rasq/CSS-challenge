@@ -4,5 +4,196 @@
 
     border-radius: 50%;
     background-color: $ball-color;
+    position: relative;
+
+}
+
+.balls-secundary{
+    @include center(flex, center, center, column);
+    @include size (30px, 30px);
+    @include ball();
+
+    bottom: -40px;
+    left: -20px;
+
+    animation: ball-one 2s linear infinite;
+
+    @keyframes ball-one {
+        from {
+            transform: rotate(0deg) translate(-70px) rotate(0deg);
+        }
+
+        to{
+            transform: rotate(360deg) translate(-70px) rotate(-360deg);
+        }
+    }
+
+    &.two{
+        @include center(flex, center, center, column);
+        @include size (20px, 20px);
+        @include ball();
+
+        top: 0;
+        left: 0;
+
+        animation: ball-two 1.7s linear infinite;
+
+        @keyframes ball-two {
+            from {
+                transform: rotate(0deg) translate(-40px) rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg) translate(-40px) rotate(-360deg);
+            }
+        }
+    }
+
+    &.three{
+        @include center(flex, center, center, column);
+        @include size (10px, 10px);
+        @include ball();
+
+        top: 0;
+        left: 50px;
+
+        animation: ball-three 2.5s linear infinite;
+
+        @keyframes ball-three {
+            from {
+                transform: rotate(0deg) translate(-40px, 20px) rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg) translate(-40px, 20px) rotate(-360deg);
+            }
+        }
+    }
+
+    &.four{
+        @include center(flex, center, center, column);
+        @include size (10px, 10px);
+        @include ball();
+
+        top: 0;
+        right: 130px;
+
+        animation: ball-four .8s linear infinite;
+
+        @keyframes ball-four {
+            from {
+                transform: rotate(0deg) translate(-40px, 20px) rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg) translate(-40px, 20px) rotate(-360deg);
+            }
+        }
+    }
+
+    &.five{
+        @include center(flex, center, center, column);
+        @include size (18px, 18px);
+        @include ball();
+
+        top: 0;
+        left: 50px;
+
+        animation: ball-five 3s linear infinite;
+
+        @keyframes ball-five {
+            from {
+                transform: rotate(0deg) translate(-40px, 30px) rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg) translate(-40px, 30px) rotate(-360deg);
+            }
+        }
+    }
+
+    &.six{
+        @include center(flex, center, center, column);
+        @include size (25px, 25px);
+        @include ball();
+
+        top: 0;
+        left: 50px;
+
+        animation: ball-six 2.2s linear infinite;
+
+        @keyframes ball-six {
+            from {
+                transform: rotate(0deg) translate(-10px, 80px) rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg) translate(-10px, 80px) rotate(-360deg);
+            }
+        }
+    }
+
+    &.seven{
+        @include center(flex, center, center, column);
+        @include size (13px, 13px);
+        @include ball();
+
+        top: 0;
+        left: 50px;
+
+        animation: ball-seven 1.7s linear infinite;
+
+        @keyframes ball-seven {
+            from {
+                transform: rotate(0deg) translate(-90px, 10px) rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg) translate(-90px, 10px) rotate(-360deg);
+            }
+        }
+    }
+
+    &.eight{
+        @include center(flex, center, center, column);
+        @include size (33px, 33px);
+        @include ball();
+
+        top: 0;
+        left: 50px;
+
+        animation: ball-eight 3.5s linear infinite;
+
+        @keyframes ball-eight {
+            from {
+                transform: rotate(0deg) translate(40px, 20px) rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg) translate(40px, 20px) rotate(-360deg);
+            }
+        }
+    }
+
+    &.nine{
+        @include center(flex, center, center, column);
+        @include size (24px, 24px);
+        @include ball();
+
+        top: 0;
+        left: 50px;
+
+        animation: ball-nine 2.5s linear infinite;
+
+        @keyframes ball-nine {
+            from {
+                transform: rotate(0deg) translate(-100px, 0px) rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg) translate(-100px, 0px) rotate(-360deg);
+            }
+        }
+    }
 
 }

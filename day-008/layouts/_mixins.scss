@@ -9,3 +9,9 @@
     width: $width;
     height: $height;
 }
+
+@mixin ball() {
+    border-radius: 50%;
+    background-color: $ball-color;
+    position: absolute;
+}
