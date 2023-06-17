@@ -1,0 +1,8 @@
+.ball-principal{
+    @include center(flex, center, center, column);
+    @include size (70px, 70px);
+
+    border-radius: 50%;
+    background-color: $ball-color;
+
+}
