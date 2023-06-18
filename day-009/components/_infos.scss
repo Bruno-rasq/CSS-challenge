@@ -1,0 +1,32 @@
+.info-left{
+    @include center(flex, center, space-between, row);
+    @include size(55%, 100%);
+
+    .grau{
+        font-size: 3em;
+    }
+
+    .more-info{
+        color:$text-color;
+        font-size: 1em;
+    }
+}
+
+.info-right{
+    @include center(flex, center, right, row);
+    @include size(45%, 100%);
+
+    .days{
+        text-align: right;
+        color:$text-color;
+        font-size: 1em;
+        text-transform: uppercase;
+
+    }
+
+    .days-graus{
+        margin-left: 10px;
+        text-align: right;
+    }
+    
+}

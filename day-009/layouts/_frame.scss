@@ -1,0 +1,19 @@
+.frame{
+    @include center(flex, center, center, column);
+
+    width: 550px;
+    max-width: 90%;
+    height: 450px;
+    max-height: 80%;
+    border-radius: 8px;
+    background-color:  $frame-color;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
+    
+}
