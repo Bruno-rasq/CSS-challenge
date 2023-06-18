@@ -1,11 +1,14 @@
 // globals
 @import './variables';
-@import '../layouts/globals';
-@import '../layouts/mixins';
 
-@import '../layouts/frame';
+// dessa forma importo todos os documentos de layouts
+@use '../layouts/' as *;
 
-@import '../layouts/main';
+// @import '../layouts/globals';
+// @import '../layouts/mixins';
+// @import '../layouts/frame';
+// @import '../layouts/main';
+// @import '../layouts/footer';
 
-@import '../layouts/footer';
-@import '../components/infos';
+@use '../components/' as *;
+// @import '../components/infos';
