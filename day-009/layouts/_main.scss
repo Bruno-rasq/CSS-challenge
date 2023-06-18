@@ -1,0 +1,45 @@
+.main{
+    @include size(100%, 70%);
+    display: flex;
+
+    position: relative;
+
+    .moon{
+        @include size(80px, 80px);
+        display: flex;
+
+        position: absolute;
+        top: 40px;
+        left: 40px;
+
+        border-radius: 50%;
+        background-color: $moon-color;
+
+    }
+
+    .water{
+        @include center(flex, start, space-between, column);
+        @include size(100%, 30%);
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        .wave-back{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            @include size(100%, 100%);
+            position: relative;
+
+            background-color: $wave-back;
+
+        }
+
+        .wave-front{
+            @include size(100%, 60%);
+            background-color: $wave-front;
+        }
+    }
+
+}
