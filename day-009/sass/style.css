@@ -125,4 +125,36 @@ body {
 .info-right .days-graus {
   margin-left: 10px;
   text-align: right;
+}
+
+.gota {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  z-index: 25;
+  position: relative;
+  top: 0;
+  left: 50%;
+  background-color: rgb(94, 94, 241);
+  border-radius: 50%;
+  animation: gota 0.9s linear infinite;
+}
+.gota:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  border: 10px solid transparent;
+  border-bottom: 16px solid rgb(94, 94, 241);
+  transform: translateX(-50%);
+}
+@keyframes gota {
+  from {
+    top: 0;
+    left: 50%;
+  }
+  to {
+    top: 95%;
+    left: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
