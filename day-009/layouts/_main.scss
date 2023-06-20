@@ -9,36 +9,52 @@
         display: flex;
 
         position: absolute;
-        top: 40px;
-        left: 40px;
+        // top: 70%;
+        // left: 40px;
 
         border-radius: 50%;
         background-color: $moon-color;
+        box-shadow: 0px 0px 10px 0px rgb(247, 255, 213);
+
+        animation: moon 1.5s ease-in-out forwards;
+        transition: all 1.5s ease-in-out;
+
+        @keyframes moon {
+            from {
+                top: 70%;
+                left: 40px;
+            }
+
+            to{
+                top: 40px;
+                left: 40px; 
+            }
+        }
 
     }
 
     .water{
         @include center(flex, start, space-between, column);
         @include size(100%, 30%);
+        z-index: 20;
 
         position: absolute;
         bottom: 0;
         left: 0;
 
         .wave-back{
-            display: flex;
-            justify-content: space-around;
-            flex-direction: row;
             @include size(100%, 100%);
             position: relative;
+            bottom: 0;
+            left: 0;
 
-            background-color: $wave-back;
-
+            // background-color: $wave-back;
         }
 
         .wave-front{
-            @include size(100%, 60%);
-            background-color: $wave-front;
+            @include size(100%, 100%);
+            position: absolute;
+            // background-color: $wave-front;
         }
     }
 
