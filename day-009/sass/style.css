@@ -127,7 +127,7 @@ body {
   text-align: right;
 }
 
-.gota {
+.gota, .gota-five, .gota-four, .gota-three, .gota-two, .gota-one {
   display: flex;
   width: 20px;
   height: 20px;
@@ -138,8 +138,9 @@ body {
   background-color: rgb(94, 94, 241);
   border-radius: 50%;
   animation: gota 0.9s linear infinite;
+  transform: rotate(40deg);
 }
-.gota:before {
+.gota:before, .gota-five:before, .gota-four:before, .gota-three:before, .gota-two:before, .gota-one:before {
   content: "";
   position: absolute;
   top: -20px;
@@ -155,6 +156,79 @@ body {
   }
   to {
     top: 95%;
-    left: 50%;
+    left: 0%;
+  }
+}
+.gota-one {
+  animation: gota-one 1s linear infinite;
+}
+@keyframes gota-one {
+  from {
+    top: 0;
+    left: 20%;
+  }
+  to {
+    top: 95%;
+    left: -20%;
+  }
+}
+.gota-two {
+  animation: gota-two 0.5s linear infinite;
+}
+@keyframes gota-two {
+  from {
+    top: 0;
+    left: 70%;
+  }
+  to {
+    top: 95%;
+    left: 20%;
+  }
+}
+.gota-three {
+  animation: gota-three 0.7s linear infinite;
+}
+@keyframes gota-three {
+  from {
+    top: 0;
+    left: 90%;
+  }
+  to {
+    top: 95%;
+    left: 40%;
+  }
+}
+.gota-four {
+  animation: gota-four 1.2s linear infinite;
+  background-color: rgb(68, 68, 182);
+}
+.gota-four:before {
+  border-bottom: 16px solid rgb(68, 68, 182);
+}
+@keyframes gota-four {
+  from {
+    top: 0;
+    left: 40%;
+  }
+  to {
+    top: 95%;
+    left: -25%;
+  }
+}
+.gota-five {
+  animation: gota-five 1s linear infinite;
+  background-color: rgb(68, 68, 182);
+}
+.gota-five:before {
+  border-bottom: 16px solid rgb(68, 68, 182);
+}
+@keyframes gota-five {
+  from {
+    top: 0;
+    left: 76%;
+  }
+  to {
+    top: 95%;
+    left: 0%;
   }
 }/*# sourceMappingURL=style.css.map */

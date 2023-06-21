@@ -10,6 +10,7 @@
     background-color: rgb(94, 94, 241);
     border-radius: 50%;
     animation: gota .9s linear infinite;
+    transform: rotate(40deg);
 
     &:before{
         content: "";
@@ -29,7 +30,104 @@
 
         to{
             top: 95%;
-            left: 50%;
+            left: 0%;
+        }
+    }
+
+    &-one{
+       @extend .gota;
+       animation: gota-one 1s linear infinite;
+
+       @keyframes gota-one {
+            from {
+                top: 0;
+                left: 20%; 
+            }
+
+            to{
+                top: 95%;
+                left: -20%;
+            }
+        }
+
+    }
+
+    &-two{
+        @extend .gota;
+        animation: gota-two .5s linear infinite;
+ 
+        @keyframes gota-two {
+             from {
+                 top: 0;
+                 left: 70%; 
+            }
+ 
+             to{
+                 top: 95%;
+                 left: 20%;
+            }
+        }
+ 
+    }
+
+    &-three{
+        @extend .gota;
+        animation: gota-three .7s linear infinite;
+ 
+        @keyframes gota-three {
+             from {
+                 top: 0;
+                 left: 90%; 
+            }
+ 
+             to{
+                 top: 95%;
+                 left: 40%;
+            }
+        }
+    }
+
+    &-four{
+        @extend .gota;
+        animation: gota-four 1.2s linear infinite;
+        background-color: rgb(68, 68, 182);
+
+        &:before{
+            border-bottom: 16px solid rgb(68, 68, 182);
+        }
+ 
+        @keyframes gota-four {
+             from {
+                 top: 0;
+                 left: 40%; 
+            }
+ 
+             to{
+                 top: 95%;
+                 left: -25%;
+            }
+        }
+    }
+
+    &-five{
+        @extend .gota;
+        animation: gota-five 1s linear infinite;
+        background-color: rgb(68, 68, 182);
+
+        &:before{
+            border-bottom: 16px solid rgb(68, 68, 182);
+        }
+ 
+        @keyframes gota-five {
+             from {
+                 top: 0;
+                 left: 76%; 
+            }
+ 
+             to{
+                 top: 95%;
+                 left: 0%;
+            }
         }
     }
 

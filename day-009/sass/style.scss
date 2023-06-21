@@ -2,15 +2,15 @@
 @import './variables';
 
 // dessa forma importo todos os documentos de layouts
-@use '../layouts/' as *;
+// @use '../layouts/' as *;
 
-// @import '../layouts/globals';
-// @import '../layouts/mixins';
-// @import '../layouts/frame';
-// @import '../layouts/main';
-// @import '../layouts/footer';
+@import '../layouts/globals';
+@import '../layouts/mixins';
+@import '../layouts/frame';
+@import '../layouts/main';
+@import '../layouts/footer';
 
-@use '../components/' as *;
+// @use '../components/' as *;
 
-// @import '../components/infos';
-// @import '../components/gota';
+@import '../components/infos';
+@import '../components/gota';
