@@ -7,6 +7,7 @@
     background-color: $clock-color;
     border: 5px solid $border-clock-color;
     border-radius: 50%;
+    overflow: hidden;
 
     .clock-view{
         // @include center(flex, column, center, center);
@@ -16,11 +17,12 @@
         
         width: 95%;
         height: 95%;
-
-        border-radius: 50%;
         padding: 25px;
         margin: 10px;
-        border: 6px dotted $text-color;
+
+        border-radius: 50%;
+        border:4px dotted $text-color;
+        background-color: $clock-color;
         color: white;
 
 
