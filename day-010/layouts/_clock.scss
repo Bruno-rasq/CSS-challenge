@@ -1,21 +1,15 @@
 .clock{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include center(flex, column, center, center);
 
     width: 270px;
     height: 270px;
 
-    background-color: rgb(15, 15, 15);
-    border: 5px solid rgb(41, 41, 41);
+    background-color: $clock-color;
+    border: 5px solid $border-clock-color;
     border-radius: 50%;
 
     .clock-view{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include center(flex, column, center, center);
         
         width: 95%;
         height: 95%;
@@ -27,10 +21,7 @@
         color: white;
 
         .info{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include center(flex, column, center, center);
 
             span{
                 font-size: 50px;
@@ -38,15 +29,24 @@
 
             p{
                 font-size: .9em;
-                color: rgb(104, 104, 104);
+                color: $text-color;
             }
 
             .kcal-heart{
-                display: flex;
-                justify-content: space-between;
+                @include center (flex, row, space-between, center);
 
                 width: 100%;
                 font-size: .9em;
+
+                .heart{
+                    @include center(flex, row, center, center);
+
+                    #icon{
+                        font-size: 1.2em;
+                        margin-right: 3px;
+                        color: $text-color;
+                    }
+                }
             }
         }
     }

@@ -27,8 +27,8 @@ body {
 .clock {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 270px;
   height: 270px;
   background-color: rgb(15, 15, 15);
@@ -38,8 +38,8 @@ body {
 .clock .clock-view {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 95%;
   height: 95%;
   border-radius: 50%;
@@ -50,8 +50,8 @@ body {
 .clock .clock-view .info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .clock .clock-view .info span {
   font-size: 50px;
@@ -62,7 +62,20 @@ body {
 }
 .clock .clock-view .info .kcal-heart {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   font-size: 0.9em;
+}
+.clock .clock-view .info .kcal-heart .heart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.clock .clock-view .info .kcal-heart .heart #icon {
+  font-size: 1.2em;
+  margin-right: 3px;
+  color: rgb(104, 104, 104);
 }/*# sourceMappingURL=style.css.map */
