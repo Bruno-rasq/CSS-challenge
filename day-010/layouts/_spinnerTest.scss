@@ -1,0 +1,45 @@
+// to pegando um codigo da internte de alguem que resolveu o meu problema, e pretendo
+// estudo-lo para aplicar na minha resolução.
+
+.spinner {
+    position: absolute;
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+  
+    circle {
+        // stroke é o preenchimento
+      stroke: #c09db2;
+        // largura do spinner
+      stroke-width: 3;
+        // sem filtro
+      fill: none;
+        
+      //   esse stroke-dasaharray é uma propriedade meio complexa
+      stroke-dasharray: 0 9999;
+      
+      animation: spinner 5s linear infinite;
+      transform-origin: center center;
+    }
+  }
+  
+  @keyframes spinner {
+    from {
+      stroke-dasharray: 0 9999;
+      transform: rotate(-90deg) scaleY(1);
+    }
+    50% {
+      stroke-dasharray: 625 9999;
+      transform: rotate(-90deg) scaleY(1);
+    }
+    50.001% {
+      stroke-dasharray: 625 9999;
+      transform: rotate(-90deg) scaleY(-1);
+    }
+    to {
+      stroke-dasharray: 0 9999;
+      transform: rotate(-90deg) scaleY(-1);
+    }
+  }

@@ -37,6 +37,32 @@ body {
   border-radius: 50%;
   overflow: hidden;
 }
+.clock .spinner circle {
+  stroke: #d9ff04;
+  stroke-width: 3;
+  fill: none;
+  stroke-dasharray: 0 9999;
+  animation: spinner 5s linear infinite;
+  transform-origin: center center;
+}
+@keyframes spinner {
+  from {
+    stroke-dasharray: 0 9999;
+    transform: rotate(-90deg) scaleY(1);
+  }
+  50% {
+    stroke-dasharray: 625 9999;
+    transform: rotate(-90deg) scaleY(1);
+  }
+  50.001% {
+    stroke-dasharray: 625 9999;
+    transform: rotate(-90deg) scaleY(-1);
+  }
+  to {
+    stroke-dasharray: 0 9999;
+    transform: rotate(-90deg) scaleY(-1);
+  }
+}
 .clock .clock-view {
   display: flex;
   position: absolute;
