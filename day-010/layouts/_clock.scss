@@ -1,5 +1,6 @@
 .clock{
     @include center(flex, column, center, center);
+    position: relative;
 
     width: 270px;
     height: 270px;
@@ -13,10 +14,13 @@
         // @include center(flex, column, center, center);
 
         display: flex;
-        position: relative;
+        position: absolute;
+        top: 46%;
+        left: 46%;
+        transform: translate(-50%, -50%);
         
-        width: 95%;
-        height: 95%;
+        width: 93%;
+        height: 93%;
         padding: 25px;
         margin: 10px;
 
