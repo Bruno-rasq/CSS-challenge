@@ -1,0 +1,28 @@
+.frame{
+    display: flex;
+    
+    @include size(400px, 400px);
+    border-radius: 8px;
+    background: rgb(255, 177, 87);
+    overflow: hidden;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .shoe{
+        @include size(150px, 150px);
+        background: url('https://100dayscss.com/codepen/doc-martens.svg') center center no-repeat;
+    }
+
+    .floor{
+        @include size(100%, 150px);
+        background-color: rgb(46, 4, 4);
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+}
