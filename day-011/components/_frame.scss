@@ -11,9 +11,54 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    .shoe{
+    .shoe-left, .shoe-right{
         @include size(150px, 150px);
         background: url('https://100dayscss.com/codepen/doc-martens.svg') center center no-repeat;
+    }
+
+    .shoe-left{
+        z-index: 10;
+        position: absolute;
+        bottom: 150px;
+        left: 35%;
+
+        animation: shoe 2s ease-in-out infinite;
+
+        @keyframes shoe {
+            0% {
+        
+                transform: rotate(0deg) translate(-100px) rotate(0deg);
+            }
+        
+            100% {
+                
+                transform: rotate(360deg) translate(-100px) rotate(-360deg);
+            }
+        }
+
+    }
+
+    .shoe-right{
+        z-index: 5;
+        position: absolute;
+        bottom: 150px;
+        left: 38%;
+
+        animation: shoe 2s ease-in-out infinite;
+        animation-delay: 1s;
+
+        @keyframes shoe {
+            0% {
+        
+                transform: rotate(0deg) translate(-100px) rotate(0deg);
+            }
+        
+            100% {
+                
+                transform: rotate(360deg) translate(-100px) rotate(-360deg);
+            }
+        }
+
     }
 
     .floor{
