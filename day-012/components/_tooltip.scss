@@ -1,10 +1,19 @@
-.tooltip{
-    padding: 4px;
+@import '../components/info';
 
+.tooltip{
+    display: inline-block;
+    padding: 4px;
     background-color: $tooltip-color;
     color: $text-color;
 
     font-weight: 400;
     cursor: pointer;
+    position: relative;
+
+    &:hover .info,
+    &:focus .info{
+        visibility: visible;
+        opacity: 1;
+    }
 
 }

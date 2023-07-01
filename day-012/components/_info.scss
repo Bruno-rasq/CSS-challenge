@@ -4,6 +4,7 @@
     z-index: 15;
 
     // 
+    visibility: hidden;
     opacity: 0;
 
     width: 270px;
@@ -42,9 +43,12 @@
 
         background-color: $tooltip-info-color;
         color: $text-color;
-        font-size: .8em;
 
         position: relative;
+
+        p{
+            font-size: .8em;
+        }
 
         .block{
             width: 15px;
