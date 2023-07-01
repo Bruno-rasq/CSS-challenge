@@ -18,7 +18,8 @@ body {
   overflow: hidden;
   width: 450px;
   height: 450px;
-  padding: 30px;
+  padding-inline: 30px;
+  padding-block: 10px;
   border-radius: 8px;
   background-color: #4CB6DE;
   color: white;
@@ -27,6 +28,40 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.frame p {
+.frame:before {
+  display: flex;
+  content: ",,";
+  font-size: 250px;
+  color: #8fcce2;
+  font-family: Arial;
+  z-index: 0;
+  line-height: 35px;
+  position: absolute;
+  top: -10px;
+  left: 5px;
+}
+
+.tooltip {
+  padding: 4px;
+  background-color: rgba(41, 27, 121, 0.555);
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 10;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.quote p {
   font-size: 1.7em;
+}
+.quote .autor {
+  font-size: 1.3em;
 }/*# sourceMappingURL=style.css.map */

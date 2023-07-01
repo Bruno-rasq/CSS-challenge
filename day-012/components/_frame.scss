@@ -7,7 +7,8 @@
 
     width: 450px;
     height: 450px;
-    padding: 30px;
+    padding-inline: 30px;
+    padding-block: 10px;
     border-radius: 8px;
     background-color:  $frame-color;
     color: $text-color;
@@ -17,8 +18,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    p{
-        font-size: 1.7em;
+    &:before{
+        display: flex;
+        content: ",,";
+        font-size: 250px;
+        color: $aspa-color;
+        font-family: Arial;
+        z-index: 0;
+        line-height: 35px;
+
+        position: absolute;
+        top: -10px;
+        left: 5px;
     }
 
 }
