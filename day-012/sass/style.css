@@ -64,4 +64,50 @@ body {
 }
 .quote .autor {
   font-size: 1.3em;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  z-index: 15;
+  opacity: 0;
+  width: 270px;
+  height: 130px;
+  border-radius: 8px;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #000;
+}
+.info .pronunce {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+  padding-inline: 15px;
+  color: rgb(38, 70, 138);
+  background-color: white;
+}
+.info .text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 75%;
+  padding-inline: 15px;
+  background-color: rgb(38, 70, 138);
+  color: white;
+  font-size: 0.8em;
+  position: relative;
+}
+.info .text .block {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(38, 70, 138);
+  position: absolute;
+  bottom: -7px;
+  left: 45%;
+  transform: translateX(-50%) rotate(130deg);
 }/*# sourceMappingURL=style.css.map */
