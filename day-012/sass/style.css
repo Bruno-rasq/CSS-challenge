@@ -29,16 +29,37 @@ body {
   transform: translate(-50%, -50%);
 }
 .frame:before {
-  display: flex;
+  display: block;
   content: ",,";
   font-size: 250px;
   color: #8fcce2;
   font-family: Arial;
   z-index: 0;
-  line-height: 35px;
+  line-height: 15px;
   position: absolute;
   top: -10px;
   left: 5px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 10;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.quote p {
+  font-size: 1.7em;
+}
+.quote .autor {
+  font-size: 1.3em;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 28px;
 }
 
 .info {
@@ -51,7 +72,7 @@ body {
   height: 130px;
   border-radius: 8px;
   position: absolute;
-  top: 15px;
+  top: -5px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
@@ -104,26 +125,6 @@ body {
   opacity: 1;
 }
 
-.quote {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  z-index: 10;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-.quote p {
-  font-size: 1.7em;
-}
-.quote .autor {
-  font-size: 1.3em;
-  font-weight: 300;
-  font-style: italic;
-  line-height: 28px;
-}
-
 .info {
   display: flex;
   flex-direction: column;
@@ -134,7 +135,7 @@ body {
   height: 130px;
   border-radius: 8px;
   position: absolute;
-  top: 15px;
+  top: -5px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;

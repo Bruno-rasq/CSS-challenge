@@ -19,13 +19,13 @@
     transform: translate(-50%, -50%);
 
     &:before{
-        display: flex;
+        display: block;
         content: ",,";
         font-size: 250px;
         color: $aspa-color;
         font-family: Arial;
         z-index: 0;
-        line-height: 35px;
+        line-height: 15px;
 
         position: absolute;
         top: -10px;
