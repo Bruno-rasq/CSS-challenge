@@ -30,6 +30,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+.frame .profile:hover {
+  background-color: rgb(138, 138, 138);
+}
+.frame .profile:hover .btn {
+  opacity: 0;
+}
 
 .btn {
   display: flex;
