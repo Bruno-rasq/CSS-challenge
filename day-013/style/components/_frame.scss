@@ -1,0 +1,26 @@
+.frame{
+    width: 450px;
+    height: 450px;
+    border-radius: 8px;
+    background-color: lightgray;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4px;
+
+    .profile{
+        background-color: darkgray;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
