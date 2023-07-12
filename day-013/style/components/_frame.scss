@@ -5,67 +5,57 @@
     background-color: white;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 4px;
+    
+    .contacts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 4px;
 
-    .profile{
-        background-color: darkgray;
+        width: 450px;
+        height: 450px;
 
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        transition: .4s ease-in-out;
-
-        &:hover{
-
-            .fade{
-                opacity: 1;
-            }
-
-            .btn{
-                opacity: 1;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-            }
-        }
-
-        .fade{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            opacity: 0;
-            transition: .4s ease-in-out;
-        }
     }
 
-    .profile:nth-child(1){
-        background: url("https://100dayscss.com/codepen/13-1.jpg") no-repeat;
-        background-size: cover;
+    .call-top{
+        width: 450px;
+        height: 225px;
+        background-color: red;
+
+        position: absolute;
+        top: -100%;
+        left: 0;
+        z-index: 10;
+        transition: all .7s ease-in-out;
     }
-    .profile:nth-child(2){
-        background: url("https://100dayscss.com/codepen/13-2.jpg") no-repeat;
-        background-size: cover;
+
+    .call-top-active{
+        top: 0;
+        left: 0;
     }
-    .profile:nth-child(3){
-        background: url("https://100dayscss.com/codepen/13-3.jpg") no-repeat;
-        background-size: cover;
+
+    .call-bottom{
+        width: 450px;
+        height: 225px;
+        background-color: rgb(255, 217, 0);
+
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        z-index: 10;
+
+        transition: all .7s ease-in-out;
     }
-    .profile:nth-child(4){
-        background: url("https://100dayscss.com/codepen/13-4.jpg") no-repeat;
-        background-size: cover;
+
+    .call-bottom-active{
+        bottom: 0;
+        left: 0;
     }
 
 }
