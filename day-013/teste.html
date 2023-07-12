@@ -45,7 +45,7 @@
             background-color: yellowgreen;
         }
 
-        .frame .call{
+        .call{
             width: 450px;
             height: 225px;
             background-color: red;
@@ -54,14 +54,17 @@
             top: -100%;
             left: 0;
             z-index: 10;
+            transition: all .7s ease-in-out;
 
         }
         
         .call-active{
-            animation: down .7s ease-in-out forwards;
+            /* animation: down .7s ease-in-out forwards; */
+            top: 0;
+            left: 0;
         }
 
-        @keyframes down {
+        /* @keyframes down {
             from {
                 top: -100%;
                 left: 0;
@@ -71,7 +74,7 @@
                 top: 0;
                 left: 0;
             }
-        }
+        } */
 
         .call-bottom{
             width: 450px;
@@ -83,9 +86,11 @@
             left: 0;
             z-index: 10;
 
+            transition: all .7s ease-in-out;
+
         }
 
-        @keyframes up {
+        /* @keyframes up {
             from {
                 bottom: -100%;
                 left: 0;
@@ -95,10 +100,11 @@
                 bottom: 0;
                 left: 0;
             }
-        }
+        } */
 
         .call-bottom-active{
-            animation: up .7s ease-in-out forwards;
+            bottom: 0;
+            left: 0;
         }
 
     </style>
