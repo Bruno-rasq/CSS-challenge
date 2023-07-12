@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste desafio dia 13</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .frame{
+            width: 450px;
+            height: 450px;
+            border-radius: 8px;
+            background-color: lightgray;
+            overflow: hidden;
+
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .frame .contacts{
+            width: 450px;
+            height: 450px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 4px;
+
+        }
+
+        .frame .contacts .profile{
+            background-color: yellowgreen;
+        }
+
+        .frame .call{
+            width: 450px;
+            height: 450px;
+            background-color: red;
+
+            position: absolute;
+            top: -100%;
+            left: 0;
+            z-index: 10;
+
+            animation: down .7s ease-in-out forwards;
+        }
+
+        @keyframes down {
+            from {
+                top: -100%;
+                left: 0;
+            }
+
+            to{
+                top: 0;
+                left: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <div class="contacts">
+            <div class="profile">teste</div>
+            <div class="profile">teste</div>
+            <div class="profile">teste</div>
+            <div class="profile">teste</div>
+        </div>
+        <div class="call">call</div>
+    </div>
+</body>
+</html>
