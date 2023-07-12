@@ -117,13 +117,13 @@
                 <button class="btn">click</button>
             </div>
             <div class="profile">
-                <button >click</button>
+                <button class="btn">click</button>
             </div>
             <div class="profile">
-                <button >click</button>
+                <button class="btn">click</button>
             </div>
             <div class="profile">
-                <button >click</button>
+                <button class="btn">click</button>
             </div>
         </div>
 
@@ -136,12 +136,21 @@
     <script>
         const call = document.querySelector(".call");
         const callBottom = document.querySelector(".call-bottom");
-        const btn = document.querySelector(".btn");
 
-        btn.addEventListener("click", () => {
+        // capturando mais de um elemento de mesma classe
+        const btn = document.querySelectorAll(".btn");
+
+        // btn.addEventListener("click", () => {
+        //     call.classList.toggle("call-active");
+        //     callBottom.classList.toggle("call-bottom-active");
+        // });
+        // o metodo addeventListener não funciona para lista de objetos, e sim para elemento.
+        // por isso não funcionará bom a const btn pois se trata de uma lista de elementos
+
+        btn.forEach((btn) => btn.addEventListener("click", () => {
             call.classList.toggle("call-active");
             callBottom.classList.toggle("call-bottom-active");
-        });
+        }))
 
         const close = document.querySelector(".call-btn");
 
