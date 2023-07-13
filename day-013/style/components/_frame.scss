@@ -37,6 +37,7 @@
 
         display: flex;
         justify-content: end;
+
     }
 
     .call-top-active{
@@ -72,6 +73,28 @@
     .call-bottom-active{
         bottom: 0;
         left: 0;
+    }
+
+    .icon{
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: 3px solid white;
+
+        background: url("https://100dayscss.com/codepen/13-1.jpg") no-repeat;
+        background-size: cover;
+
+        position: absolute;
+        top: -140px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 15;
+        transition: all .6s ease-in;
+    }
+
+    .icon-active{
+        top: 45%;
+        left: 50%;
     }
 
 }
