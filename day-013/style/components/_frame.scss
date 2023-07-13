@@ -26,13 +26,17 @@
     .call-top{
         width: 450px;
         height: 225px;
-        background-color: red;
+        background: url("https://100dayscss.com/codepen/13-1-header.jpg") no-repeat;
+        background-size: cover;
 
         position: absolute;
         top: -100%;
         left: 0;
         z-index: 10;
         transition: all .7s ease-in-out;
+
+        display: flex;
+        justify-content: end;
     }
 
     .call-top-active{
@@ -43,7 +47,7 @@
     .call-bottom{
         width: 450px;
         height: 225px;
-        background-color: rgb(255, 217, 0);
+        background-color: rgb(230, 84, 68);
 
         position: absolute;
         bottom: -100%;

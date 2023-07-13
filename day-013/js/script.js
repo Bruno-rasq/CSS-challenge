@@ -6,3 +6,10 @@ btns.forEach((btns) => btns.addEventListener("click", () => {
     callTop.classList.toggle("call-top-active");
     callBottom.classList.toggle("call-bottom-active");
 }));
+
+const close = document.querySelector(".close");
+
+close.addEventListener("click", () => {
+    callTop.classList.toggle("call-top-active");
+    callBottom.classList.toggle("call-bottom-active");
+});

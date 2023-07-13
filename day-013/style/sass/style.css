@@ -33,12 +33,15 @@ body {
 .frame .call-top {
   width: 450px;
   height: 225px;
-  background-color: red;
+  background: url("https://100dayscss.com/codepen/13-1-header.jpg") no-repeat;
+  background-size: cover;
   position: absolute;
   top: -100%;
   left: 0;
   z-index: 10;
   transition: all 0.7s ease-in-out;
+  display: flex;
+  justify-content: end;
 }
 .frame .call-top-active {
   top: 0;
@@ -47,7 +50,7 @@ body {
 .frame .call-bottom {
   width: 450px;
   height: 225px;
-  background-color: rgb(255, 217, 0);
+  background-color: rgb(230, 84, 68);
   position: absolute;
   bottom: -100%;
   left: 0;
@@ -119,6 +122,17 @@ body {
 }
 .btn:hover {
   background-color: rgb(226, 61, 43);
+}
+
+.close {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(230, 84, 68);
+  border: none;
+  margin: 8px;
+  cursor: pointer;
 }
 
 .call-frame {
