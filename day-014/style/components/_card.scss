@@ -24,6 +24,7 @@
 
     .card-front {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: $card-color;
@@ -33,11 +34,41 @@
             transform-origin: 50% 100%;
 
             @keyframes bycicle {
-                0%, 100% {
+
+                0%,
+                100% {
                     transform: scaleY(1);
                 }
+
                 50% {
                     transform: scaleY(1.03);
+                }
+            }
+        }
+
+        .street {
+            width: 190px;
+            height: 5px;
+            display: flex;
+            gap: 15px;
+            overflow-x: hidden;
+
+            @for $i from 1 through 9 {
+                .flow-#{$i} {
+                    background-color: $frame-color;
+                    width: (2 + $i * 2) + px;
+                    height: 100%;
+
+                    animation: street (0.8 + random(2) / 10) + s linear (random(10) / 10) + s infinite;
+                }
+            }
+
+            @keyframes street {
+                0% {
+                    transform: translate3d(0, 0, 0) scaleX(1);
+                }
+                100% {
+                    transform: translate3d(-210px,0,0) scaleX(.8);
                 }
             }
         }
@@ -50,18 +81,41 @@
         background-color: $card-color;
         transform: rotateX(180deg);
 
-        #helicopter{
+        position: relative;
+
+        #helicopter {
             animation: helicopter .7s ease-in-out infinite;
             transform-origin: 50% 100%;
 
             @keyframes helicopter {
-                0%, 100% {
+
+                0%,
+                100% {
                     transform: scaleY(1);
                 }
+
                 50% {
                     transform: scaleY(1.03);
                 }
             }
         }
+
+        // .sky{
+        //     width: 60%;
+        //     height: 50%;
+
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%, -50%);
+
+        //     @for $a from 1 through 5{
+        //         .clound-#{$a}{
+        //             background-color: $frame-color;
+        //             width: 20px;
+        //             height: 5px;
+        //         }
+        //     }
+        // }
     }
 }
