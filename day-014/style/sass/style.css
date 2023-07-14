@@ -33,6 +33,7 @@ body {
   transform-style: preserve-3d;
   transform: rotateX(0deg);
   transition: transform 0.9s ease-in-out;
+  cursor: pointer;
 }
 .content:hover {
   transform: rotateX(180deg);
@@ -45,9 +46,39 @@ body {
   backface-visibility: hidden;
 }
 .content .card-front {
-  background-color: rgb(233, 192, 11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFCE4E;
+}
+.content .card-front #bycicle {
+  animation: bycicle 0.7s ease-in-out infinite;
+  transform-origin: 50% 100%;
+}
+@keyframes bycicle {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.03);
+  }
 }
 .content .card-back {
-  background-color: rgb(233, 192, 11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFCE4E;
   transform: rotateX(180deg);
+}
+.content .card-back #helicopter {
+  animation: helicopter 0.7s ease-in-out infinite;
+  transform-origin: 50% 100%;
+}
+@keyframes helicopter {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.03);
+  }
 }/*# sourceMappingURL=style.css.map */

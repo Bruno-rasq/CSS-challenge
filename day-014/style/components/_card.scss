@@ -5,9 +5,10 @@
 
     position: relative;
     transform-style: preserve-3d;
-
     transform: rotateX(0deg);
     transition: transform .9s ease-in-out;
+
+    cursor: pointer;
 
     &:hover {
         transform: rotateX(180deg);
@@ -22,11 +23,45 @@
     }
 
     .card-front {
-        background-color: rgb(233, 192, 11);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $card-color;
+
+        #bycicle {
+            animation: bycicle .7s ease-in-out infinite;
+            transform-origin: 50% 100%;
+
+            @keyframes bycicle {
+                0%, 100% {
+                    transform: scaleY(1);
+                }
+                50% {
+                    transform: scaleY(1.03);
+                }
+            }
+        }
     }
 
     .card-back {
-        background-color: rgb(233, 192, 11);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $card-color;
         transform: rotateX(180deg);
+
+        #helicopter{
+            animation: helicopter .7s ease-in-out infinite;
+            transform-origin: 50% 100%;
+
+            @keyframes helicopter {
+                0%, 100% {
+                    transform: scaleY(1);
+                }
+                50% {
+                    transform: scaleY(1.03);
+                }
+            }
+        }
     }
 }
