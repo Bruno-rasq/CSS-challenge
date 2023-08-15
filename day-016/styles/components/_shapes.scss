@@ -69,13 +69,10 @@
     @keyframes hex {
 
         0% {scale: (0);}
-
         30% { scale: (0);}
-
-        35% { scale: (1);}
-
-        48% { scale: (0);}
-
+        35% { scale: (0);}
+        40% { scale: (1);}
+        53% { scale: (0);}
         100% { scale: (0);}
     }
 
@@ -115,8 +112,9 @@
     @keyframes triangle {
         0% { scale: (0); }
         50% { scale: (0); }
-        55% { scale: (1); }
         65% { scale: (0); }
+        70% { scale: (1); }
+        78% { scale: (0); }
         100% { scale: (0); }
     }
 }
