@@ -103,3 +103,20 @@
         border-top: 25px solid rgb(248, 252, 252);
     }
 }
+
+.triangle{
+    width: 0px;
+    height: 0px;
+    border-left: 59px solid transparent;
+    border-right: 59px solid transparent;
+    border-bottom: 85px solid rgb(248, 252, 252);
+
+    animation: triangle 5s ease-in infinite;
+    @keyframes triangle {
+        0% { scale: (0); }
+        50% { scale: (0); }
+        55% { scale: (1); }
+        65% { scale: (0); }
+        100% { scale: (0); }
+    }
+}
