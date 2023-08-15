@@ -1,7 +1,7 @@
 .left{
     width: 20px;
     height: 140px;
-    background-color: rgb(53, 226, 160);
+    background-color: rgb(255, 255, 255);
 
     position: absolute;
     left: 32%;
@@ -11,10 +11,22 @@
     z-index: 10;
 }
 
+.left-inside{
+    width: 20px;
+    height: 140px;
+    background-color: rgb(168, 168, 168);
+
+    position: absolute;
+    left: 38%;
+
+    transform: rotate(30deg);
+    transform: skew(-25deg);
+}
+
 .base{
     width: 149px;
     height: 20px;
-    background-color: white;
+    background-color: rgb(168, 168, 168);
 
     position: absolute;
     bottom: 26%;
@@ -23,14 +35,39 @@
     z-index: 5;
 }
 
+.base-inside{
+    width: 130px;
+    height: 20px;
+    background-color: rgb(70, 70, 69);
+
+    position: absolute;
+    bottom: 32%;
+    left: 29%;
+
+    transform: skew(25deg);
+}
+
 .right{
     width: 20px;
     height: 140px;
-    background-color: rgb(214, 9, 9);
+    background-color: rgb(70, 70, 69);
 
     position: absolute;
     right: 32%;
 
     transform: rotate(-30deg);
     transform: skew(25deg);
+}
+
+.right-inside{
+    width: 20px;
+    height: 140px;
+    background-color: rgb(255, 255, 255);
+
+    position: absolute;
+    right: 39%;
+
+    transform: rotate(-30deg);
+    transform: skew(25deg); 
+    z-index: 11;
 }
