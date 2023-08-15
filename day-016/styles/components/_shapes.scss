@@ -1,4 +1,4 @@
-.ball{
+.ball-one{
     width: 100px;
     height:  100px;
     border-radius: 50%;
@@ -9,32 +9,50 @@
     top: -100px;
     left: 50%;
 
-    animation: ball 5s ease-in infinite;
+    animation: ball-one 5s ease-in infinite;
 
-    @keyframes ball{
+    @keyframes ball-one{
 
         0% { top: -100px;}
         5% { top: 50%;}
         9% { top: 40%;}
         15% { top: 50%;}
 
-        25% {
-            top: 50%;
-            width: 100px;
-            height: 100px;
-        }
+        25% {top: 50%; width: 100px; height: 100px;}
 
-        30% {
-            top: 50%;
-            width: 0px;
-            height: 0px;
-        }
+        30% {top: 50%; width: 0px; height: 0px;}
 
-        100% {
-            top: 50%;
-            width: 0px;
-            height: 0px;
-        }
+        100% {top: 50%; width: 0px; height: 0px;}
+    }
+
+}
+
+.ball-two{
+    width: 100px;
+    height:  100px;
+    border-radius: 50%;
+    background-color: rgb(248, 252, 252);
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    animation: ball-two 5s ease-in infinite;
+
+    @keyframes ball-two{
+
+        0% { top: 50%; width: 0px; height: 0px;}
+
+        80% { top: 50%; width: 0px; height: 0px;}
+
+        85% { top: 50%; width: 125px; height: 122px;}
+
+        88% { top: 50%; width: 100px; height: 100px;}
+
+        95% { top: 50%; width: 100px; height: 100px;}
+
+        100% { top: 110%; width: 100px; height: 100px;}
     }
 
 }
