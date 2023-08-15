@@ -31,4 +31,40 @@ body {
   height: 290px;
   background-color: rgb(10, 10, 10);
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.left {
+  width: 20px;
+  height: 140px;
+  background-color: rgb(53, 226, 160);
+  position: absolute;
+  left: 32%;
+  transform: rotate(30deg);
+  transform: skew(-25deg);
+  z-index: 10;
+}
+
+.base {
+  width: 149px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  bottom: 26%;
+  left: 26%;
+  transform: skew(25deg);
+  z-index: 5;
+}
+
+.right {
+  width: 20px;
+  height: 140px;
+  background-color: rgb(214, 9, 9);
+  position: absolute;
+  right: 32%;
+  transform: rotate(-30deg);
+  transform: skew(25deg);
 }/*# sourceMappingURL=style.css.map */
